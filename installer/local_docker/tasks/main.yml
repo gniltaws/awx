@@ -209,3 +209,8 @@
       RABBITMQ_VHOST: "awx"
       MEMCACHED_HOST: "memcached"
       MEMCACHED_PORT: "11211"
+
+- name: create template to start awx
+  template:
+    src: "start.yml"
+    dest: "/start.yml"
